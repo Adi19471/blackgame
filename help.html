@@ -19,6 +19,19 @@
     .container {
         border: 2px dashed black;
     }
+    
+    button {
+        color: rgb(248, 245, 255);
+        background-color: rgb(153, 117, 34);
+        border-radius: 1px 2px;
+        font-size: 20px;
+    }
+    
+    button:hover {
+        background-color: red;
+        color: wheat;
+        border: 1px solid darkblue;
+    }
 </style>
 
 <body>
@@ -37,9 +50,9 @@
                     <p>Created By </p><br>
                     <p>HELP: The Game is a project which brings together the top developers, <br> studios and gaming industry superstars <br> - all to raise money for children in war.</p>
                     <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="game.html" role="button">GAME</a>
+                        <button onclick="mygFunc()">GAME</button>
 
-                        </button>
+
 
                     </p>
                 </div>
@@ -67,14 +80,24 @@
                     hand then you can choose to either hit or stand for each hand accordingly.</p>
                 <p><strong>Betting</strong> Bets must be placed prior to playing. After receiving your first 2 cards, you can choose to double down (double your original bet). After your next move, you can no longer choose to double down.</p>
                 <p><strong>Payout</strong> Payout is 1:1 unless you get a blackjack. For a blackjack, payout is 3:2.</p>
-                <button id="rules-close"><a href="index.html" class="btn btn-info">
 
-                <input type="button" value="GAME">BACK</a></button>
+                <button onclick="mygFunc()">GAME</button>
+
+
+
+
             </div>
         </div>
     </div>
 
+    <!--script to redirect to another webpage-->
+    <script>
+        function mygFunc() {
+            window.location.href = "about.html";
 
+
+        }
+    </script>
 
     <script src="blackjack.js"></script>
 

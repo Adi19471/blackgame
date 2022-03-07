@@ -7,6 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EXIT</title>
 </head>
+<style>
+    button {
+        color: rgb(248, 245, 255);
+        background-color: rgb(153, 117, 34);
+        border-radius: 1px 2px;
+        font-size: 20px;
+    }
+    
+    button:hover {
+        background-color: red;
+        color: wheat;
+        border: 1px solid darkblue;
+    }
+</style>
 
 <body>
     <center>
@@ -15,9 +29,23 @@
 
     <div class="container">
         <p class="lead">
-            <a class="btn btn-primary btn-lg" href="index.html" role="button">HOME</a>
+            <center>
+                <button onclick="myhome()">HOME</button>
+
+            </center>
         </p>
     </div>
+
+
+
+    <script>
+        function myhome() {
+            window.location.href = "index.html";
+
+
+        }
+    </script>
+
 </body>
 
 </html>
