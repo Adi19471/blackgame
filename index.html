@@ -15,7 +15,7 @@
 
     <style>
         body {
-            background-color: rgb(106, 137, 206);
+            background-color: gray;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: 700;
         }
@@ -32,8 +32,9 @@
         
         button {
             color: rgb(248, 245, 255);
-            background-color: rgb(153, 117, 34);
-            border-radius: 1px 2px;
+            background-color: rgb(86, 34, 153);
+            text-shadow: 1px 1px rgb(163, 33, 33);
+            border-radius: 30px;
             font-size: 20px;
         }
         
@@ -54,33 +55,37 @@
 
 
     <div class="container">
-        <div class="alert alert-warning" role="alert">
+
+        <div class="jumbotron">
+            <div class="alert alert-warning " role="alert">
+                <center>
+
+
+                    <div class="alert alert-warning" role="alert">
+
+                        <button onclick="mygFunc()">GAME</button>
+                    </div>
+                </center>
+            </div>
             <center>
+                <div class="alert alert-warning" role="alert">
 
+                    <button onclick="myFunc()">ABOUT</button>
 
-                <div class="alert alert-info" role="alert">
-
-                    <button onclick="mygFunc()">GAME</button>
                 </div>
             </center>
-        </div>
-        <div class="alert alert-info" role="alert">
-            <center>
-                <button onclick="myFunc()">ABOUT</button>
-            </center>
-        </div>
-        <div class="alert alert-success" role="alert">
-            <center>
-                <button onclick="myhFunc()">HELP</button>
-            </center>
-        </div>
-        <div class="alert alert-danger" role="alert">
-            <center>
-                <button onclick="myeFunc()">EXIT</button>
+            <div class="alert alert-warning" role="alert">
+                <center>
+                    <button onclick="myhFunc()">HELP</button>
+                </center>
+            </div>
+            <div class="alert alert-warning" role="alert">
+                <center>
+                    <button onclick="myeFunc()">EXIT</button>
 
-            </center>
+                </center>
+            </div>
         </div>
-        `
     </div>
 
 
