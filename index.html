@@ -43,32 +43,78 @@
     <div class="container">
         <div class="alert alert-warning" role="alert">
             <center>
-                <a href="game.html" class="alert-link">
 
-                    <input type="button" value="GAME"></a>
+
+                <div class="alert alert-info" role="alert">
+
+                    <button onclick="mygFunc()">GAME</button>
+                </div>
             </center>
         </div>
         <div class="alert alert-info" role="alert">
             <center>
-                <a href="about.html" class="alert-link">
-                    <input type="button" value="ABOUT"></a>
+                <button onclick="myFunc()">ABOUT</button>
             </center>
         </div>
         <div class="alert alert-success" role="alert">
             <center>
-                <a href="help.html" class="alert-link">
-                    <input type="button" value="HELP"></a>
+                <button onclick="myhFunc()">HELP</button>
             </center>
         </div>
         <div class="alert alert-danger" role="alert">
             <center>
-                <a href="index.html" class="alert-link">
+                <button onclick="myeFunc()">EXIT</button>
 
-                    <input type="button" value="EXIT"></a>
             </center>
         </div>
         `
     </div>
+
+
+
+
+
+
+
+    <!--script to redirect to another webpage-->
+    <script>
+        function myFunc() {
+            window.location.href = "about.html";
+
+
+        }
+    </script>
+
+    <script>
+        function mygFunc() {
+            window.location.href = "game.html";
+
+
+        }
+    </script>
+
+    <script>
+        function myhFunc() {
+            window.location.href = "help.html";
+
+
+        }
+    </script>
+
+    <script>
+        function myeFunc() {
+            window.location.href = "exit.html";
+
+
+        }
+    </script>
+
+
+</body>
+
+</html>
+
+
 
 </body>
 
